@@ -4,7 +4,8 @@
 
 ### 🚀 Tech Explorer | 🔧 Embedded & IoT Developer | 🧠 AI Enthusiast
 
-[![Website](https://img.shields.io/badge/Website-TechnoFoasters-blue?style=for-the-badge&logo=google-chrome)](https://www.technofoasters.com)
+[![Website](https://img.shields.io/badge/Portfolio-AntonyAlex-white?style=for-the-badge&logo=google-chrome)](https://www.antonyalex.tech)  
+[![Website](https://img.shields.io/badge/TechnoFoasters-blue?style=for-the-badge&logo=google-chrome)](https://www.technofoasters.com)
 [![Gmail](https://img.shields.io/badge/Gmail-antonyalex476@gmail.com-red?style=for-the-badge&logo=gmail)](mailto:antonyalex476@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-AntonyAlex-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/antony-alex-s-53aa45258)
 
@@ -19,10 +20,14 @@
 💡 I enjoy building things that *see, sense, and solve*.
 
 ---
+![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true)
+
+---
+
 ## 📊 GitHub Stats & Activity
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true" />
+  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true&custom_title=Antony's%20GitHub%20Activity" />
 </p>
 
 <p align="center">
@@ -37,6 +42,7 @@
 </p>
 
 ---
+
 ## 🏆 GitHub Trophies
 
 ![Trophies](https://github-profile-trophy.vercel.app/?username=alex22022005&theme=algolia&no-frame=true&margin-w=10)
@@ -65,6 +71,7 @@
 → Embedded solution promoting green automation and city sustainability.
 
 ---
+
 ## 🎯 2025 Goals
 
 - 🚀 Launch multiple AI + IoT open-source projects  
