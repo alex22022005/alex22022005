@@ -1,40 +1,83 @@
-# 👋 Hey there, I'm Antony Alex!
+<!-- README for Antony Alex -->
 
-🎯 A passionate Tech Explorer | Embedded & IoT Developer | AI & Computer Vision Enthusiast  
-💼 Founder at [TechnoFoasters](https://www.technofoasters.com) — Building a platform to empower future innovators  
+<h1 align="center">Hi 👋, I'm Antony Alex</h1>
+<h3 align="center">🚀 Tech Explorer | 🔧 Embedded & IoT Developer | 🧠 AI Enthusiast</h3>
 
----
-
-## 🚀 About Me
-
-I'm a tech-savvy creator who loves turning ideas into real-world solutions. Whether it's crafting intelligent systems using Embedded C or building AI models that see the world, I thrive at the intersection of hardware and software.
-
-🔧 **Tech Stack:**  
-- Languages: C, Python, Embedded C  
-- Tools & Platforms: Arduino, Raspberry Pi, YOLOv8, Google Colab  
-- Domains: AI/ML, Computer Vision, IoT, Automation, Web Development  
-
-🎓 I believe in continuous learning and love building projects that combine innovation, impact, and sustainability. I’ve trained AI models, automated smart systems, and even built a few bots that understand medical images.
+<p align="center">
+  <a href="https://www.technofoasters.com"><img src="https://img.shields.io/badge/Website-TechnoFoasters-blue?style=for-the-badge&logo=google-chrome" /></a>
+  <a href="mailto:antonyalexofficial@gmail.com"><img src="https://img.shields.io/badge/Gmail-antonyalexofficial@gmail.com-red?style=for-the-badge&logo=gmail" /></a>
+  <a href="https://linkedin.com/in/antonyalex"><img src="https://img.shields.io/badge/LinkedIn-AntonyAlex-blue?style=for-the-badge&logo=linkedin" /></a>
+</p>
 
 ---
 
-## 🌟 Featured Projects
+## 👨‍💻 About Me
 
-- **🔍 AI Human Detection System** – Annotated video analysis with real-time population count & visual charts  
-- **🧠 Brain Tumor Detection Bot** – Telegram bot using Python & trained CNNs for MRI image analysis  
-- **🌱 Smart Urban Sustainable System** – IoT-driven sustainable automation model for cities  
+I'm an enthusiastic tech developer who loves building smart solutions that blend **AI**, **IoT**, and **Embedded Systems**. From AI-based video analytics to real-time hardware control using C, I enjoy tackling challenges that merge software and hardware into meaningful outcomes.
 
----
-
-## 📫 Let's Connect!
-
-- 📧 antonyalex476@gmail.com  
-- 🌐 [technofoasters.com](https://www.technofoasters.com)  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/antony-alex-s-53aa45258)  
-- 📍 Always building, always learning 💡
+🚀 Currently leading **[TechnoFoasters](https://www.technofoasters.com)** — a platform to empower students and innovators with technical skills and startup knowledge.
 
 ---
 
-> “Innovation is seeing what everybody has seen and thinking what nobody has thought.”
+## 🛠️ My Tech Toolbox
 
-Thanks for visiting my GitHub! ⭐
+- 💻 **Languages:** C, Python, Embedded C, HTML/CSS
+- 🔌 **Platforms & Boards:** STM32 (Cortex-M4), Arduino, Raspberry Pi
+- 🧠 **AI/ML Tools:** YOLOv8, OpenCV, TensorFlow, Roboflow, Google Colab
+- 🌐 **Other Tools:** Git, VS Code, Figma, Canva, Telegram Bots
+
+---
+
+## 📌 Highlighted Projects
+
+- 🎥 **AI Human Detection System**  
+  → Detects and counts humans in live videos with charts overlayed in real-time.
+
+- 🧠 **Brain Tumor Detector Bot**  
+  → Telegram bot that scans MRI images and marks tumor regions using trained AI.
+
+- 🌱 **Smart Urban Sustainable System**  
+  → Embedded IoT model for smart energy and automation in urban spaces.
+
+---
+
+## 🏆 GitHub Achievements
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=AntonyAlex&theme=algolia&margin-w=10&no-frame=true" />
+</p>
+
+---
+
+## 📈 GitHub Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=AntonyAlex&show_icons=true&theme=radical" />
+  <img src="https://streak-stats.demolab.com?user=AntonyAlex&theme=radical" />
+</p>
+
+---
+
+## 🎯 Goals for 2025
+
+- 🚀 Launch more open-source AI + IoT projects  
+- 🧠 Build a microcontroller-based ML device  
+- 💼 Collaborate with passionate developers worldwide  
+- 📚 Teach and mentor tech learners through TechnoFoasters
+
+---
+
+## 🎉 Fun Facts
+
+- I enjoy blending creativity with tech — from logos to logic gates!  
+- My projects have real-world goals: sustainability, health, and smart automation.  
+- I believe in *building while learning* — every line of code is a step forward.
+
+---
+
+> *“Don't just use technology — create it.”*  
+> — Antony Alex S
+
+---
+
+<p align="center">⭐ Thanks for visiting my profile! Feel free to connect and collaborate! ⭐</p>
