@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://www.technofoasters.com"><img src="https://img.shields.io/badge/Website-TechnoFoasters-blue?style=for-the-badge&logo=google-chrome" /></a>
   <a href="mailto:antonyalex476@gmail.com"><img src="https://img.shields.io/badge/Gmail-antonyalex476@gmail.com-red?style=for-the-badge&logo=gmail" /></a>
-  <a href="https://linkedin.com/in/antonyalex"><img src="https://img.shields.io/badge/LinkedIn-AntonyAlex-blue?style=for-the-badge&logo=linkedin" /></a>
+  <a href="https://linkedin.com/in/antony-alex-s-53aa45258"><img src="https://img.shields.io/badge/LinkedIn-AntonyAlex-blue?style=for-the-badge&logo=linkedin" /></a>
 </p>
 
 ---
