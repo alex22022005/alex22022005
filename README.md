@@ -20,9 +20,9 @@ I'm an enthusiastic tech developer who loves building smart solutions that blend
 ---
 <div align="center">
   
-  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AntonyAlex&layout=compact&theme=radical&hide_border=true)
+  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=alex22022005&layout=compact&theme=radical&hide_border=true)
   
-  ![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=AntonyAlex&theme=react-dark&hide_border=true&area=true)
+  ![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true)
 
 </div>
 
