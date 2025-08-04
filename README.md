@@ -38,7 +38,7 @@ I'm an enthusiastic tech developer who loves building smart solutions that blend
 ## 📈 GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AntonyAlex&show_icons=true&theme=radical" />
+  <img src="https://github-readme-stats.vercel.app/api?username=alex22022005&show_icons=true&theme=radical" />
   <img src="https://streak-stats.demolab.com?user=AntonyAlex&theme=radical" />
 </p>
 
