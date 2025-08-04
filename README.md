@@ -1,91 +1,93 @@
-<!-- README for Antony Alex -->
+# 👋 Hi, I'm Antony Alex
 
-<h1 align="center">Hi 👋, I'm Antony Alex</h1>
-<h3 align="center">🚀 Tech Explorer | 🔧 Embedded & IoT Developer | 🧠 AI Enthusiast</h3>
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&color=F73D3D&center=true&vCenter=true&width=495&lines=Building+Smart+and+Sustainable+Tech+%F0%9F%9A%80)
 
-<p align="center">
-  <a href="https://www.technofoasters.com"><img src="https://img.shields.io/badge/Website-TechnoFoasters-blue?style=for-the-badge&logo=google-chrome" /></a>
-  <a href="mailto:antonyalex476@gmail.com"><img src="https://img.shields.io/badge/Gmail-antonyalex476@gmail.com-red?style=for-the-badge&logo=gmail" /></a>
-  <a href="https://linkedin.com/in/antony-alex-s-53aa45258"><img src="https://img.shields.io/badge/LinkedIn-AntonyAlex-blue?style=for-the-badge&logo=linkedin" /></a>
-</p>
+### 🚀 Tech Explorer | 🔧 Embedded & IoT Developer | 🧠 AI Enthusiast
+
+[![Website](https://img.shields.io/badge/Website-TechnoFoasters-blue?style=for-the-badge&logo=google-chrome)](https://www.technofoasters.com)
+[![Gmail](https://img.shields.io/badge/Gmail-antonyalex476@gmail.com-red?style=for-the-badge&logo=gmail)](mailto:antonyalex476@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-AntonyAlex-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/antony-alex-s-53aa45258)
 
 ---
 
 ## 👨‍💻 About Me
 
-I'm an enthusiastic tech developer who loves building smart solutions that blend **AI**, **IoT**, and **Embedded Systems**. From AI-based video analytics to real-time hardware control using C, I enjoy tackling challenges that merge software and hardware into meaningful outcomes.
+🎓 I'm an enthusiastic developer passionate about turning creative ideas into tech-powered solutions. My work blends **AI**, **IoT**, and **Embedded Systems** into real-world innovation.
 
-🚀 Currently leading **[TechnoFoasters](https://www.technofoasters.com)** — a platform to empower students and innovators with technical skills and startup knowledge.
+🚀 Currently leading [**TechnoFoasters**](https://www.technofoasters.com), a platform to empower students and young innovators with project-based learning and startup skills.
 
----
-<div align="center">
-  
-  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=alex22022005&layout=compact&theme=radical&hide_border=true)
-  
-  ![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true)
-
-</div>
-
-## 🛠️ My Tech Toolbox
-
-- 💻 **Languages:** C, Python, Embedded C, HTML/CSS, Java
-- 🔌 **Platforms & Boards:** STM32 (Cortex-M4), Arduino, Raspberry Pi, IOT, Mobile Robotics
-- 🧠 **AI/ML Tools:** YOLOv8, OpenCV, Roboflow, Google Colab
-- 🌐 **Other Tools:** VS Code,Canva, Telegram Bots, Arduino IDE
+💡 I enjoy building things that *see, sense, and solve*.
 
 ---
 
-## 📈 GitHub Activity
+## 🔧 Tech Stack
+
+- **Languages:** C, Python, Embedded C, Java, HTML/CSS  
+- **Microcontrollers:** STM32 (Cortex-M4), Arduino, Raspberry Pi  
+- **Domains:** AI, Computer Vision, IoT, Automation  
+- **AI Tools:** YOLOv8, OpenCV, Roboflow, Google Colab  
+- **Other Tools:** VS Code, Arduino IDE, Canva, Figma, Telegram Bots  
+
+---
+
+## 🌟 Highlighted Projects
+
+✨ **AI Human Detection System**  
+→ Annotated real-time video analysis with live charts and population metrics.
+
+🧠 **Brain Tumor Detector Bot**  
+→ Telegram bot that identifies brain tumor areas in MRI scans using AI.
+
+🌱 **Smart Urban Sustainable System**  
+→ Embedded solution promoting green automation and city sustainability.
+
+---
+
+## 📊 GitHub Stats & Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=alex22022005&show_icons=true&theme=radical" />
-  <img src="https://streak-stats.demolab.com?user=alex22022005&theme=radical" />
+  <img src="https://github-readme-stats.vercel.app/api?username=alex22022005&show_icons=true&theme=radical&hide_border=true" width="48%"/>
+  <img src="https://streak-stats.demolab.com?user=alex22022005&theme=radical&hide_border=true" width="48%"/>
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alex22022005&layout=compact&theme=radical&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true" />
 </p>
 
 ---
 
-## 🏆 GitHub Achievements
+## 🏆 GitHub Trophies
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=alex22022005&theme=algolia&margin-w=10&no-frame=true" />
-</p>
+![Trophies](https://github-profile-trophy.vercel.app/?username=alex22022005&theme=algolia&no-frame=true&margin-w=10)
 
 ---
 
-## 📌 Highlighted Projects
+## 🎯 2025 Goals
 
-- 🎥 **AI Human Detection System**  
-  → Detects and counts humans in live videos with charts overlayed in real-time.
-
-- 🧠 **Brain Tumor Detector Bot**  
-  → Telegram bot that scans MRI images and marks tumor regions using trained AI.
-
-- 🌱 **Smart Urban Sustainable System**  
-  → Embedded IoT model for smart energy and automation in urban spaces.
+- 🚀 Launch multiple AI + IoT open-source projects  
+- ⚙️ Build an ML-integrated microcontroller-based system  
+- 💬 Conduct workshops under TechnoFoasters  
+- 🌍 Collaborate with global developers & startups
 
 ---
 
+## 💡 Fun Facts
 
-## 🎯 Goals for 2025
-
-- 🚀 Launch more open-source AI + IoT projects  
-- 🧠 Build a microcontroller-based ML device  
-- 💼 Collaborate with passionate developers worldwide  
-- 📚 Teach and mentor tech learners through TechnoFoasters
+- 🎨 I design logos, tech setups, and logic circuits for fun  
+- 🧠 I love simplifying complex tech for real-world use  
+- 📌 Every bug teaches me something new
 
 ---
 
-## 🎉 Fun Facts
-
-- I enjoy blending creativity with tech — from logos to logic gates!  
-- My projects have real-world goals: sustainability, health, and smart automation.  
-- I believe in *building while learning* — every line of code is a step forward.
-
----
-
-> *“Don't just use technology — create it.”*  
+> *“Don’t just use technology — create it.”*  
 > — Antony Alex S
 
 ---
 
-<p align="center">⭐ Thanks for visiting my profile! Feel free to connect and collaborate! ⭐</p>
+⭐ **Thanks for visiting my profile! Feel free to connect and collaborate. Let's build something amazing!**
