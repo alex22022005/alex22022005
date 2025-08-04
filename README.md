@@ -18,13 +18,37 @@ I'm an enthusiastic tech developer who loves building smart solutions that blend
 🚀 Currently leading **[TechnoFoasters](https://www.technofoasters.com)** — a platform to empower students and innovators with technical skills and startup knowledge.
 
 ---
+<div align="center">
+  
+  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AntonyAlex&layout=compact&theme=radical&hide_border=true)
+  
+  ![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=AntonyAlex&theme=react-dark&hide_border=true&area=true)
+
+</div>
 
 ## 🛠️ My Tech Toolbox
 
-- 💻 **Languages:** C, Python, Embedded C, HTML/CSS
-- 🔌 **Platforms & Boards:** STM32 (Cortex-M4), Arduino, Raspberry Pi
-- 🧠 **AI/ML Tools:** YOLOv8, OpenCV, TensorFlow, Roboflow, Google Colab
-- 🌐 **Other Tools:** Git, VS Code, Figma, Canva, Telegram Bots
+- 💻 **Languages:** C, Python, Embedded C, HTML/CSS, Java
+- 🔌 **Platforms & Boards:** STM32 (Cortex-M4), Arduino, Raspberry Pi, IOT, Mobile Robotics
+- 🧠 **AI/ML Tools:** YOLOv8, OpenCV, Roboflow, Google Colab
+- 🌐 **Other Tools:** VS Code,Canva, Telegram Bots, Arduino IDE
+
+---
+
+## 📈 GitHub Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=AntonyAlex&show_icons=true&theme=radical" />
+  <img src="https://streak-stats.demolab.com?user=AntonyAlex&theme=radical" />
+</p>
+
+---
+
+## 🏆 GitHub Achievements
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=AntonyAlex&theme=algolia&margin-w=10&no-frame=true" />
+</p>
 
 ---
 
@@ -41,22 +65,6 @@ I'm an enthusiastic tech developer who loves building smart solutions that blend
 
 ---
 
-## 🏆 GitHub Achievements
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AntonyAlex&theme=algolia&margin-w=10&no-frame=true" />
-</p>
-
----
-
-## 📈 GitHub Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AntonyAlex&show_icons=true&theme=radical" />
-  <img src="https://streak-stats.demolab.com?user=AntonyAlex&theme=radical" />
-</p>
-
----
 
 ## 🎯 Goals for 2025
 
