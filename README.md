@@ -96,5 +96,5 @@
 
 ## 🔍 Compare Your GitHub Stats with Mine
 
-[![Compare Button](https://img.shields.io/badge/Compare%20with%20Me-%F0%9F%94%8D-blue?style=for-the-badge)](https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/compare.html)
+[![Compare Button](https://img.shields.io/badge/Compare%20with%20Me-%F0%9F%94%8D-blue?style=for-the-badge)](https://alex22022005.github.io/alex22022005/compare.html)
 
