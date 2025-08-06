@@ -20,25 +20,22 @@
 💡 I enjoy building things that *see, sense, and solve*.
 
 ---
-![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true)
-
----
 
 ## 📊 GitHub Stats & Activity
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true&custom_title=Antony's%20GitHub%20Activity" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true&custom_title=Antony's%20GitHub%20Activity" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=alex22022005&show_icons=true&theme=radical&hide_border=true" width="48%"/>
-  <img src="https://streak-stats.demolab.com?user=alex22022005&theme=radical&hide_border=true" width="48%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=alex22022005&show_icons=true&theme=radical&hide_border=true" width="48%" height="191px"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=alex22022005&theme=radical&hide_border=true" width="48%" height="220px"/>
 </p>
 
 <br/>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alex22022005&layout=compact&theme=radical&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alex22022005&layout=compact&theme=radical&hide_border=true" width="48%" height="220px"/>
 </p>
 
 ---
