@@ -92,3 +92,9 @@
 ---
 
 ⭐ **Thanks for visiting my profile! Feel free to connect and collaborate. Let's build something amazing!**
+---
+
+## 🔍 Compare Your GitHub Stats with Mine
+
+[![Compare Button](https://img.shields.io/badge/Compare%20with%20Me-%F0%9F%94%8D-blue?style=for-the-badge)](https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/compare.html)
+
