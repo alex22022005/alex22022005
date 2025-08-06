@@ -1,4 +1,3 @@
-[media pointer="file-service://file-LjgyA3es9cnfHAmS1Et9TJ"]
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,18 +34,24 @@
     }
     .card {
       background: #161b22;
-      padding: 10px;
+      padding: 15px;
       border-radius: 10px;
       width: 45%;
       min-width: 300px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    h3 {
+      color: #58a6ff;
+    }
+    .section-title {
+      font-size: 18px;
+      margin: 10px 0 5px;
+      color: #8b949e;
     }
     img {
       max-width: 100%;
       border-radius: 8px;
       margin-bottom: 10px;
-    }
-    h3 {
-      color: #58a6ff;
     }
   </style>
 </head>
@@ -67,24 +72,45 @@
         return;
       }
       const myUser = "alex22022005";
+
       const statsHTML = `
         <div class="card">
           <h3>Antony Alex</h3>
+          <div class="section-title">GitHub Stats</div>
           <img src="https://github-readme-stats.vercel.app/api?username=${myUser}&show_icons=true&theme=radical&hide_border=true">
+          
+          <div class="section-title">Streak Stats</div>
           <img src="https://github-readme-streak-stats.herokuapp.com?user=${myUser}&theme=radical&hide_border=true">
+          
+          <div class="section-title">Contribution Graph</div>
           <img src="https://github-readme-activity-graph.vercel.app/graph?username=${myUser}&theme=react-dark&hide_border=true&area=true">
+          
+          <div class="section-title">Trophies</div>
           <img src="https://github-profile-trophy.vercel.app/?username=${myUser}&theme=algolia&no-frame=true&margin-w=10&row=2&column=3">
+          
+          <div class="section-title">Achievements</div>
           <img src="https://github-profile-achievements.vercel.app/api/?username=${myUser}">
         </div>
+
         <div class="card">
           <h3>${user}</h3>
+          <div class="section-title">GitHub Stats</div>
           <img src="https://github-readme-stats.vercel.app/api?username=${user}&show_icons=true&theme=radical&hide_border=true">
+          
+          <div class="section-title">Streak Stats</div>
           <img src="https://github-readme-streak-stats.herokuapp.com?user=${user}&theme=radical&hide_border=true">
+          
+          <div class="section-title">Contribution Graph</div>
           <img src="https://github-readme-activity-graph.vercel.app/graph?username=${user}&theme=react-dark&hide_border=true&area=true">
+          
+          <div class="section-title">Trophies</div>
           <img src="https://github-profile-trophy.vercel.app/?username=${user}&theme=algolia&no-frame=true&margin-w=10&row=2&column=3">
+          
+          <div class="section-title">Achievements</div>
           <img src="https://github-profile-achievements.vercel.app/api/?username=${user}">
         </div>
       `;
+
       document.getElementById("statsContainer").innerHTML = statsHTML;
     }
   </script>
