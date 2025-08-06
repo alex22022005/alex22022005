@@ -1,91 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Compare GitHub Stats</title>
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Stats Compare - Antony Alex</title>
+<style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0d1117;
-      color: #c9d1d9;
-      text-align: center;
-      padding: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #0d1117;
+        color: white;
+        text-align: center;
+        padding: 20px;
     }
-    input, button {
-      padding: 10px;
-      font-size: 16px;
-      margin: 5px;
-      border-radius: 5px;
-      border: none;
+    h1 {
+        color: #58a6ff;
+    }
+    form {
+        margin-bottom: 20px;
+    }
+    input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        width: 200px;
     }
     button {
-      background: #238636;
-      color: white;
-      cursor: pointer;
+        padding: 10px 15px;
+        border: none;
+        background-color: #58a6ff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
     }
     button:hover {
-      background: #2ea043;
+        background-color: #1f6feb;
     }
-    .stats {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 20px;
+    .compare-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
     }
-    .card {
-      background: #161b22;
-      padding: 10px;
-      border-radius: 10px;
-      width: 45%;
-      min-width: 300px;
+    .stats-box {
+        background-color: #161b22;
+        border-radius: 10px;
+        padding: 15px;
+        width: 45%;
+        min-width: 350px;
     }
     img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 10px;
+        max-width: 100%;
+        margin-bottom: 10px;
     }
-    h3 {
-      color: #58a6ff;
+    @media (max-width: 800px) {
+        .stats-box {
+            width: 100%;
+        }
     }
-  </style>
+</style>
 </head>
 <body>
-  <h1>Compare Your GitHub Stats with Antony Alex</h1>
-  <p>Enter your GitHub username below and click Compare.</p>
-  
-  <input type="text" id="username" placeholder="Enter GitHub username">
-  <button onclick="compare()">Compare</button>
 
-  <div class="stats" id="statsContainer"></div>
+<h1>🚀 Compare Your GitHub Stats with Antony Alex</h1>
+<p>Enter your GitHub username and see your stats side-by-side with mine.</p>
 
-  <script>
-    function compare() {
-      const user = document.getElementById("username").value.trim();
-      if (!user) {
-        alert("Please enter a GitHub username!");
-        return;
-      }
-      const myUser = "alex22022005";
-      const statsHTML = `
-        <div class="card">
-          <h3>Antony Alex</h3>
-          <img src="https://github-readme-stats.vercel.app/api?username=${myUser}&show_icons=true&theme=radical&hide_border=true">
-          <img src="https://github-readme-streak-stats.herokuapp.com/?user=alex22022005&theme=radical&hide_border=true" width="48%" height="220px"/>
-          <img src="https://github-readme-activity-graph.vercel.app/graph?username=${myUser}&theme=react-dark&hide_border=true&area=true">
-          <img src="https://github-profile-trophy.vercel.app/?username=${myUser}&theme=algolia&no-frame=true&margin-w=10&row=2&column=3">
-          <img src="https://github-profile-achievements.vercel.app/api/?username=${myUser}">
+<form id="compareForm">
+    <input type="text" id="visitorUsername" placeholder="Enter your GitHub username" required>
+    <button type="submit">Compare</button>
+</form>
+
+<div class="compare-container" id="results"></div>
+
+<script>
+document.getElementById("compareForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let visitor = document.getElementById("visitorUsername").value.trim();
+    if (visitor === "") return;
+
+    let myUser = "alex22022005";
+
+    let resultsDiv = document.getElementById("results");
+    resultsDiv.innerHTML = `
+        <div class="stats-box">
+            <h2>👑 Antony Alex</h2>
+            <img src="https://github-readme-stats.vercel.app/api?username=${myUser}&show_icons=true&theme=radical&hide_border=true" alt="Stats">
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=${myUser}&theme=radical&hide_border=true" alt="Streaks">
+            <img src="https://github-profile-trophy.vercel.app/?username=${myUser}&theme=algolia&no-frame=true&margin-w=5" alt="Trophies">
+            <img src="https://github-readme-activity-graph.vercel.app/graph?username=${myUser}&theme=react-dark&hide_border=true&area=true" alt="Activity Graph">
         </div>
-        <div class="card">
-          <h3>${user}</h3>
-          <img src="https://github-readme-stats.vercel.app/api?username=${user}&show_icons=true&theme=radical&hide_border=true">
-          <img src="https://github-readme-streak-stats.herokuapp.com/?user=alex22022005&theme=radical&hide_border=true" width="48%" height="220px"/>
-          <img src="https://github-readme-activity-graph.vercel.app/graph?username=${user}&theme=react-dark&hide_border=true&area=true">
-          <img src="https://github-profile-trophy.vercel.app/?username=${user}&theme=algolia&no-frame=true&margin-w=10&row=2&column=3">
-          <img src="https://github-profile-achievements.vercel.app/api/?username=${user}">
+        <div class="stats-box">
+            <h2>🧑‍💻 ${visitor}</h2>
+            <img src="https://github-readme-stats.vercel.app/api?username=${visitor}&show_icons=true&theme=radical&hide_border=true" alt="Stats">
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=${visitor}&theme=radical&hide_border=true" alt="Streaks">
+            <img src="https://github-profile-trophy.vercel.app/?username=${visitor}&theme=algolia&no-frame=true&margin-w=5" alt="Trophies">
+            <img src="https://github-readme-activity-graph.vercel.app/graph?username=${visitor}&theme=react-dark&hide_border=true&area=true" alt="Activity Graph">
         </div>
-      `;
-      document.getElementById("statsContainer").innerHTML = statsHTML;
-    }
-  </script>
+    `;
+});
+</script>
+
 </body>
 </html>
