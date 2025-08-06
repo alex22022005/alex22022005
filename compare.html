@@ -1,105 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GitHub Stats Compare - Antony Alex</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Stats Compare - Antony Alex</title>
+  <style>
     body {
-        font-family: Arial, sans-serif;
-        background-color: #0d1117;
-        color: white;
-        text-align: center;
-        padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
     h1 {
-        color: #58a6ff;
+      color: #58a6ff;
     }
     form {
-        margin-bottom: 20px;
+      margin-bottom: 20px;
     }
     input {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        margin-right: 10px;
-        width: 200px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      width: 200px;
     }
     button {
-        padding: 10px 15px;
-        border: none;
-        background-color: #58a6ff;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
+      padding: 10px 15px;
+      border: none;
+      background-color: #58a6ff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
     }
     button:hover {
-        background-color: #1f6feb;
+      background-color: #1f6feb;
     }
     .compare-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
     }
     .stats-box {
-        background-color: #161b22;
-        border-radius: 10px;
-        padding: 15px;
-        width: 45%;
-        min-width: 350px;
+      background-color: #161b22;
+      border-radius: 10px;
+      padding: 15px;
+      width: 45%;
+      min-width: 350px;
     }
     img {
-        max-width: 100%;
-        margin-bottom: 10px;
+      max-width: 100%;
+      margin-bottom: 10px;
+      display: block;
     }
     @media (max-width: 800px) {
-        .stats-box {
-            width: 100%;
-        }
+      .stats-box {
+        width: 100%;
+      }
     }
-</style>
+  </style>
 </head>
 <body>
 
-<h1>🚀 Compare Your GitHub Stats with Antony Alex</h1>
-<p>Enter your GitHub username and see your stats side-by-side with mine.</p>
+  <h1>🚀 Compare Your GitHub Stats with Antony Alex</h1>
+  <p>Enter your GitHub username and see your stats side-by-side with mine.</p>
 
-<form id="compareForm">
+  <form id="compareForm">
     <input type="text" id="visitorUsername" placeholder="Enter your GitHub username" required>
     <button type="submit">Compare</button>
-</form>
+  </form>
 
-<div class="compare-container" id="results"></div>
+  <div class="compare-container" id="results"></div>
 
-<script>
-document.getElementById("compareForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    let visitor = document.getElementById("visitorUsername").value.trim();
-    if (visitor === "") return;
+  <script>
+    function addErrorHandler(img) {
+      img.onerror = () => {
+        img.style.display = "none"; // Hide broken images
+      };
+    }
 
-    let myUser = "alex22022005";
+    document.getElementById("compareForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const visitor = document.getElementById("visitorUsername").value.trim();
+      if (!visitor) return;
 
-    let resultsDiv = document.getElementById("results");
-    resultsDiv.innerHTML = `
+      const myUser = "alex22022005";
+      const resultsDiv = document.getElementById("results");
+
+      resultsDiv.innerHTML = `
         <div class="stats-box">
-            <h2>👑 Antony Alex</h2>
-            <img src="https://github-readme-stats.vercel.app/api?username=${myUser}&show_icons=true&theme=radical&hide_border=true" alt="Stats">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=${myUser}&theme=radical&hide_border=true" alt="Streaks">
-            <img src="https://github-profile-trophy.vercel.app/?username=${myUser}&theme=algolia&no-frame=true&margin-w=5" alt="Trophies">
-            <img src="https://github-readme-activity-graph.vercel.app/graph?username=${myUser}&theme=react-dark&hide_border=true&area=true" alt="Activity Graph">
+          <h2>👑 Antony Alex</h2>
+          <img src="https://github-readme-stats.vercel.app/api?username=${myUser}&show_icons=true&theme=radical&hide_border=true" alt="Antony Alex's GitHub Stats">
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=${myUser}&theme=radical&hide_border=true" alt="Antony Alex's GitHub Streaks">
+          <img src="https://github-profile-trophy.vercel.app/?username=${myUser}&theme=algolia&no-frame=true&margin-w=5&title=Stars,Commits,Repositories,Followers,Experience" alt="Antony Alex's Trophies">
+          <img src="https://github-readme-activity-graph.vercel.app/graph?username=${myUser}&theme=react-dark&hide_border=true&area=true" alt="Antony Alex's Activity Graph">
         </div>
+
         <div class="stats-box">
-            <h2>🧑‍💻 ${visitor}</h2>
-            <img src="https://github-readme-stats.vercel.app/api?username=${visitor}&show_icons=true&theme=radical&hide_border=true" alt="Stats">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=${visitor}&theme=radical&hide_border=true" alt="Streaks">
-            <img src="https://github-profile-trophy.vercel.app/?username=${visitor}&theme=algolia&no-frame=true&margin-w=5" alt="Trophies">
-            <img src="https://github-readme-activity-graph.vercel.app/graph?username=${visitor}&theme=react-dark&hide_border=true&area=true" alt="Activity Graph">
+          <h2>🧑‍💻 ${visitor}</h2>
+          <img id="vstats" alt="${visitor}'s GitHub Stats">
+          <img id="vstreak" alt="${visitor}'s GitHub Streaks">
+          <img id="vtrophies" alt="${visitor}'s Trophies">
+          <img id="vgraph" alt="${visitor}'s Activity Graph">
         </div>
-    `;
-});
-</script>
+      `;
+
+      // Set and handle image URLs dynamically
+      const setImg = (id, src) => {
+        const img = document.getElementById(id);
+        img.src = src;
+        addErrorHandler(img);
+      };
+
+      setImg("vstats", `https://github-readme-stats.vercel.app/api?username=${visitor}&show_icons=true&theme=radical&hide_border=true`);
+      setImg("vstreak", `https://github-readme-streak-stats.herokuapp.com/?user=${visitor}&theme=radical&hide_border=true`);
+      setImg("vtrophies", `https://github-profile-trophy.vercel.app/?username=${visitor}&theme=algolia&no-frame=true&margin-w=5&title=Stars,Commits,Repositories,Followers,Experience`);
+      setImg("vgraph", `https://github-readme-activity-graph.vercel.app/graph?username=${visitor}&theme=react-dark&hide_border=true&area=true`);
+    });
+  </script>
 
 </body>
 </html>
