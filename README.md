@@ -56,7 +56,7 @@ Click the button below to see **side-by-side stats, trophies, and achievements**
 
 [![Compare with Me](https://img.shields.io/badge/🚀%20Compare%20with%20Me-%F0%9F%94%8D-blueviolet?style=for-the-badge&logo=github&logoColor=white)](https://alex22022005.github.io/alex22022005/compare.html)
 
-<br/><br/>
+<br/>
 
 💡 *Pro Tip:* Bring your **best commits** – I’m watching! 😏
 
