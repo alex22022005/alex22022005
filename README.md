@@ -45,15 +45,25 @@
 ![Trophies](https://github-profile-trophy.vercel.app/?username=alex22022005&theme=algolia&no-frame=true&margin-w=10)
 
 ---
-<br/>
+## 🔍 Compare Your GitHub Stats with Mine  
+
+<div align="center">
+
+✨ Curious how your GitHub journey stacks up against mine? ✨  
+Click the button below to see **side-by-side stats, trophies, and achievements** in real-time! 🚀
+
 <br/>
 
-## 🔍 Compare Your GitHub Stats with Mine
+[![Compare with Me](https://img.shields.io/badge/🚀%20Compare%20with%20Me-%F0%9F%94%8D-blueviolet?style=for-the-badge&logo=github&logoColor=white)](https://alex22022005.github.io/alex22022005/compare.html)
 
-[![Compare Button](https://img.shields.io/badge/Compare%20with%20Me-%F0%9F%94%8D-blue?style=for-the-badge)](https://alex22022005.github.io/alex22022005/compare.html)
+<br/><br/>
+
+💡 *Pro Tip:* Bring your **best commits** – I’m watching! 😏
+
+</div>
+
 ---
-<br/>
-<br/>
+
 
 ## 🔧 Tech Stack
 
