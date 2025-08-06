@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Compare GitHub Stats</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #0d1117; color: #c9d1d9; text-align: center; padding: 20px; }
+    input, button { padding: 10px; font-size: 16px; margin: 5px; }
+    .stats { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 20px; }
+    .card { background: #161b22; padding: 10px; border-radius: 10px; }
+    img { max-width: 100%; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Compare Your GitHub Stats with Antony Alex</h1>
+  <p>Enter your GitHub username below and click Compare.</p>
+  <input type="text" id="username" placeholder="Enter GitHub username">
+  <button onclick="compare()">Compare</button>
+
+  <div class="stats" id="statsContainer"></div>
+
+  <script>
+    function compare() {
+      const user = document.getElementById("username").value.trim();
+      if (!user) {
+        alert("Please enter a GitHub username!");
+        return;
+      }
+      const myUser = "alex22022005";
+      const statsHTML = `
+        <div class="card">
+          <h3>Antony Alex</h3>
+          <img src="https://github-readme-stats.vercel.app/api?username=${myUser}&show_icons=true&theme=radical&hide_border=true">
+          <img src="https://github-readme-streak-stats.herokuapp.com?user=${myUser}&theme=radical&hide_border=true">
+          <img src="https://github-readme-activity-graph.vercel.app/graph?username=${myUser}&theme=react-dark&hide_border=true&area=true">
+        </div>
+        <div class="card">
+          <h3>${user}</h3>
+          <img src="https://github-readme-stats.vercel.app/api?username=${user}&show_icons=true&theme=radical&hide_border=true">
+          <img src="https://github-readme-streak-stats.herokuapp.com?user=${user}&theme=radical&hide_border=true">
+          <img src="https://github-readme-activity-graph.vercel.app/graph?username=${user}&theme=react-dark&hide_border=true&area=true">
+        </div>
+      `;
+      document.getElementById("statsContainer").innerHTML = statsHTML;
+    }
+  </script>
+</body>
+</html>
