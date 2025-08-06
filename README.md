@@ -29,7 +29,7 @@
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=alex22022005&show_icons=true&theme=radical&hide_border=true" width="48%" height="191px"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=alex22022005&theme=radical&hide_border=true" width="48%" height="220px"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=alex22022005&theme=radical&hide_border=true" width="48%" height="220px"/>
 </p>
 
 <br/>
@@ -45,6 +45,7 @@
 ![Trophies](https://github-profile-trophy.vercel.app/?username=alex22022005&theme=algolia&no-frame=true&margin-w=10)
 
 ---
+
 ## 🔍 Compare Your GitHub Stats with Mine  
 
 <div align="center">
@@ -63,7 +64,6 @@ Click the button below to see **side-by-side stats, trophies, and achievements**
 </div>
 
 ---
-
 
 ## 🔧 Tech Stack
 
@@ -111,4 +111,3 @@ Click the button below to see **side-by-side stats, trophies, and achievements**
 ---
 
 ⭐ **Thanks for visiting my profile! Feel free to connect and collaborate. Let's build something amazing!**
-
