@@ -106,7 +106,12 @@ document.getElementById("compareForm").addEventListener("submit", function(event
         <div class="stats-box">
             <h2>🧑‍💻 ${visitor}</h2>
             <img src="https://github-readme-stats.vercel.app/api?username=${visitor}&show_icons=true&theme=radical&hide_border=true" alt="Stats">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=${visitor}&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" onerror="this.style.display='none'" alt="Streaks">
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=${visitor}&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" 
+                 onerror="this.style.display='none'; document.getElementById('streakError').style.display='block';" 
+                 alt="Streaks">
+            <div id="streakError" style="display: none; color: #ff5c8d; font-size: 16px; margin-bottom: 10px;">
+                ⚠️ Could not load streak stats (GitHub API limit or invalid username).
+            </div>
             <p align="center">
                 <img src="https://github-readme-activity-graph.vercel.app/graph?username=${visitor}&theme=react-dark&hide_border=true&area=true&custom_title=${visitor}'s%20GitHub%20Activity" />
             </p>
