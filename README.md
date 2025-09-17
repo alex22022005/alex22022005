@@ -4,7 +4,7 @@
 
 ### 🚀 Tech Explorer | 🔧 Embedded & IoT Developer | 🧠 AI Enthusiast
 
-[![Website](https://img.shields.io/badge/Portfolio-AntonyAlex-white?style=for-the-badge&logo=google-chrome)](https://www.antonyalex.tech)  
+[![Website](https://img.shields.io/badge/Portfolio-AntonyAlex-white?style=for-the-badge&logo=google-chrome)](https://www.antonyalex.onrender.com)  
 [![Website](https://img.shields.io/badge/TechnoFoasters-blue?style=for-the-badge&logo=google-chrome)](https://www.technofoasters.com)
 [![Gmail](https://img.shields.io/badge/Gmail-antonyalex476@gmail.com-red?style=for-the-badge&logo=gmail)](https://mail.google.com/mail/?view=cm&fs=1&to=antonyalex476@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-AntonyAlex-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/antony-alex-s-53aa45258)
