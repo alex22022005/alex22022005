@@ -35,7 +35,8 @@
 <br/>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alex22022005&layout=compact&theme=radical&hide_border=true" width="48%" height="200px"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alex22022005&layout=compact&theme=radical&hide_border=true" width="48%" height="200px"/>
+  <img src="https://leetcard.jacoblin.cool/alex22022005?theme=radical&hide_border=true" width="48%" height="200px"/>
 </p>
 
 ---
