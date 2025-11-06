@@ -1,7 +1,5 @@
 # 👋 Hi, I'm Antony Alex
-
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&color=F73D3D&center=true&vCenter=true&width=495&lines=Building+Smart+and+Sustainable+Tech+%F0%9F%9A%80)
-
 ### 🚀 Tech Explorer | 🔧 Embedded & IoT Developer | 🧠 AI Enthusiast
 
 [![Website](https://img.shields.io/badge/Portfolio-AntonyAlex-white?style=for-the-badge&logo=google-chrome)](https://antonyalex.onrender.com/)  
