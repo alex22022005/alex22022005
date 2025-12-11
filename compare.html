@@ -6,7 +6,7 @@
 <title>GitHub Stats Compare - Antony Alex</title>
 <style>
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #0d1117;
         color: white;
         text-align: center;
@@ -16,45 +16,67 @@
         color: #58a6ff;
     }
     form {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     input {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
+        padding: 12px;
+        border: 1px solid #30363d;
+        background-color: #0d1117;
+        color: white;
+        border-radius: 6px;
         margin-right: 10px;
-        width: 200px;
+        width: 250px;
     }
     button {
-        padding: 10px 15px;
+        padding: 12px 20px;
         border: none;
-        background-color: #58a6ff;
+        background-color: #238636;
         color: white;
-        border-radius: 5px;
+        border-radius: 6px;
         cursor: pointer;
+        font-weight: bold;
     }
     button:hover {
-        background-color: #1f6feb;
+        background-color: #2ea043;
     }
     .compare-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
-        margin-top: 30px;
+        gap: 30px;
+        margin-top: 20px;
     }
     .stats-box {
         background-color: #161b22;
+        border: 1px solid #30363d;
         border-radius: 10px;
-        padding: 15px;
+        padding: 20px;
         width: 45%;
-        min-width: 350px;
+        min-width: 380px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .stats-box h2 {
+        border-bottom: 1px solid #30363d;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
     }
     img {
         max-width: 100%;
         margin-bottom: 10px;
+        border-radius: 4px;
     }
-    @media (max-width: 800px) {
+    /* Layout for side-by-side small cards */
+    .row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .half-width {
+        width: 48%;
+        min-width: 150px;
+    }
+    @media (max-width: 900px) {
         .stats-box {
             width: 100%;
         }
@@ -64,23 +86,32 @@
 <body>
 
 <h1>🚀 Compare Your GitHub Stats with Antony Alex</h1>
-<p>Enter your GitHub username and see your stats side-by-side with mine.</p>
+<p>Enter your GitHub username below to see a side-by-side comparison!</p>
+<p style="font-size: 0.9em; color: #8b949e;">(Note: LeetCode stats will only load if your GitHub and LeetCode usernames are the same)</p>
 
 <form id="compareForm">
-    <input type="text" id="visitorUsername" placeholder="Enter your GitHub username" required>
-    <button type="submit">Compare</button>
+    <input type="text" id="visitorUsername" placeholder="Enter GitHub Username" required>
+    <button type="submit">Compare Now</button>
 </form>
 
 <div class="compare-container" id="results">
-    <!-- Default view showing only Antony -->
     <div class="stats-box">
         <h2>👑 Antony Alex</h2>
-        <img src="https://github-readme-stats.vercel.app/api?username=alex22022005&show_icons=true&theme=radical&hide_border=true" alt="Stats">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=alex22022005&theme=radical&hide_border=true" alt="Streaks">
+        
         <p align="center">
-            <img src="https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true&custom_title=Antony's%20GitHub%20Activity" />
+             <img src="https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true&custom_title=Antony's%20GitHub%20Activity" />
         </p>
-        <img src="https://github-profile-trophy.vercel.app/?username=alex22022005&theme=algolia&no-frame=true&margin-w=5" alt="Trophies">
+
+        <img src="https://github-profile-trophy.vercel.app/?username=alex22022005&theme=radical&no-frame=true&margin-w=10&margin-h=10" alt="Trophies">
+
+        <div class="row">
+            <img class="half-width" src="https://github-readme-stats.vercel.app/api?username=alex22022005&show_icons=true&theme=radical&hide_border=true&cache_seconds=1800" alt="Stats">
+            <img class="half-width" src="https://streak-stats.demolab.com?user=alex22022005&theme=radical&hide_border=true" alt="Streaks">
+        </div>
+
+        <div class="row">
+             <img src="https://leetcard.jacoblin.cool/alex22022005?theme=dark&hide_border=true" style="width: 100%; margin-top: 10px;" alt="LeetCode">
+        </div>
     </div>
 </div>
 
@@ -91,33 +122,33 @@ document.getElementById("compareForm").addEventListener("submit", function(event
     if (!visitor) return;
 
     let myUser = "alex22022005";
-
     let resultsDiv = document.getElementById("results");
-    resultsDiv.innerHTML = `
+
+    // Helper function to generate HTML for a user card
+    function generateCard(username, title) {
+        return `
         <div class="stats-box">
-            <h2>👑 Antony Alex</h2>
-            <img src="https://github-readme-stats.vercel.app/api?username=${myUser}&show_icons=true&theme=radical&hide_border=true" alt="Stats">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=${myUser}&theme=radical&hide_border=true" alt="Streaks">
+            <h2>${title}</h2>
+            
             <p align="center">
-                <img src="https://github-readme-activity-graph.vercel.app/graph?username=${myUser}&theme=react-dark&hide_border=true&area=true&custom_title=Antony's%20GitHub%20Activity" />
+                <img src="https://github-readme-activity-graph.vercel.app/graph?username=${username}&theme=react-dark&hide_border=true&area=true&custom_title=${username}'s%20Activity" />
             </p>
-            <img src="https://github-profile-trophy.vercel.app/?username=${myUser}&theme=algolia&no-frame=true&margin-w=5" alt="Trophies">
-        </div>
-        <div class="stats-box">
-            <h2>🧑‍💻 ${visitor}</h2>
-            <img src="https://github-readme-stats.vercel.app/api?username=${visitor}&show_icons=true&theme=radical&hide_border=true" alt="Stats">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=${visitor}&theme=radical&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" 
-                 onerror="this.style.display='none'; document.getElementById('streakError').style.display='block';" 
-                 alt="Streaks">
-            <div id="streakError" style="display: none; color: #ff5c8d; font-size: 16px; margin-bottom: 10px;">
-                ⚠️ Could not load streak stats (GitHub API limit or invalid username).
+
+            <img src="https://github-profile-trophy.vercel.app/?username=${username}&theme=radical&no-frame=true&margin-w=10&margin-h=10" alt="Trophies">
+
+            <div class="row">
+                <img class="half-width" src="https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=radical&hide_border=true&cache_seconds=1800" alt="Stats">
+                <img class="half-width" src="https://streak-stats.demolab.com?user=${username}&theme=radical&hide_border=true" alt="Streaks">
             </div>
-            <p align="center">
-                <img src="https://github-readme-activity-graph.vercel.app/graph?username=${visitor}&theme=react-dark&hide_border=true&area=true&custom_title=${visitor}'s%20GitHub%20Activity" />
-            </p>
-            <img src="https://github-profile-trophy.vercel.app/?username=${visitor}&theme=algolia&no-frame=true&margin-w=5" alt="Trophies">
+
+            <div class="row">
+                 <img src="https://leetcard.jacoblin.cool/${username}?theme=dark&hide_border=true" style="width: 100%; margin-top: 10px;" alt="LeetCode Stats">
+            </div>
         </div>
-    `;
+        `;
+    }
+
+    resultsDiv.innerHTML = generateCard(myUser, "👑 Antony Alex") + generateCard(visitor, `🧑‍💻 ${visitor}`);
 });
 </script>
 
