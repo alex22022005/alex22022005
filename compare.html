@@ -14,16 +14,18 @@
     }
     h1 {
         color: #58a6ff;
+        margin-bottom: 10px;
     }
     .subtext {
         color: #8b949e;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        font-size: 0.9em;
     }
     form {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
         flex-wrap: wrap;
     }
     input {
@@ -32,16 +34,21 @@
         background-color: #0d1117;
         color: white;
         border-radius: 6px;
-        width: 200px;
+        width: 220px;
+        outline: none;
+    }
+    input:focus {
+        border-color: #58a6ff;
     }
     button {
-        padding: 12px 20px;
+        padding: 12px 25px;
         border: none;
         background-color: #238636;
         color: white;
         border-radius: 6px;
         cursor: pointer;
         font-weight: bold;
+        transition: background 0.2s;
     }
     button:hover {
         background-color: #2ea043;
@@ -51,33 +58,35 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
-        margin-top: 20px;
     }
     .stats-box {
         background-color: #161b22;
         border: 1px solid #30363d;
         border-radius: 10px;
-        padding: 20px;
+        padding: 25px;
         width: 45%;
-        min-width: 380px;
+        min-width: 400px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .stats-box h2 {
         border-bottom: 1px solid #30363d;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
     }
     img {
         max-width: 100%;
         margin-bottom: 15px;
-        border-radius: 4px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        border-radius: 6px;
     }
     @media (max-width: 900px) {
         .stats-box {
             width: 100%;
+            min-width: unset;
         }
     }
 </style>
@@ -85,11 +94,11 @@
 <body>
 
 <h1>🚀 Compare Stats with Antony Alex</h1>
-<p class="subtext">Enter your usernames below to see a side-by-side comparison!</p>
+<p class="subtext">Enter your details below to see a side-by-side comparison!</p>
 
 <form id="compareForm">
-    <input type="text" id="visitorGithub" placeholder="GitHub Username" required>
-    <input type="text" id="visitorLeetcode" placeholder="LeetCode Username" required>
+    <input type="text" id="visitorGithub" placeholder="Enter GitHub Username" required>
+    <input type="text" id="visitorLeetcode" placeholder="Enter LeetCode Username" required>
     <button type="submit">Compare Now</button>
 </form>
 
@@ -99,9 +108,9 @@
         
         <img src="https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true&custom_title=Antony's%20Activity" />
 
-        <img src="https://streak-stats.demolab.com?user=alex22022005&theme=radical&hide_border=true" style="width: 90%;" alt="Streaks">
+        <img src="https://streak-stats.demolab.com?user=alex22022005&theme=radical&hide_border=true" style="width: 95%;" alt="Streaks">
 
-        <img src="https://leetcard.jacoblin.cool/alex22022005?theme=dark&hide_border=true" style="width: 90%;" alt="LeetCode">
+        <img src="https://leetcard.jacoblin.cool/alex22022005?theme=dark&hide_border=true" style="width: 95%;" alt="LeetCode">
     </div>
 </div>
 
@@ -128,9 +137,9 @@ document.getElementById("compareForm").addEventListener("submit", function(event
             
             <img src="https://github-readme-activity-graph.vercel.app/graph?username=${ghUsername}&theme=react-dark&hide_border=true&area=true&custom_title=${ghUsername}'s%20Activity" />
 
-            <img src="https://streak-stats.demolab.com?user=${ghUsername}&theme=radical&hide_border=true" style="width: 90%;" alt="Streaks">
+            <img src="https://streak-stats.demolab.com?user=${ghUsername}&theme=radical&hide_border=true" style="width: 95%;" alt="Streaks">
 
-            <img src="https://leetcard.jacoblin.cool/${lcUsername}?theme=dark&hide_border=true" style="width: 90%;" alt="LeetCode Stats">
+            <img src="https://leetcard.jacoblin.cool/${lcUsername}?theme=dark&hide_border=true" style="width: 95%;" alt="LeetCode Stats">
         </div>
         `;
     }
