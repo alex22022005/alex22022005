@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GitHub Stats Compare - Antony Alex</title>
+<title>GitHub & LeetCode Stats Compare - Antony Alex</title>
 <style>
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,8 +15,16 @@
     h1 {
         color: #58a6ff;
     }
+    .subtext {
+        color: #8b949e;
+        margin-bottom: 20px;
+    }
     form {
         margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
     }
     input {
         padding: 12px;
@@ -24,8 +32,7 @@
         background-color: #0d1117;
         color: white;
         border-radius: 6px;
-        margin-right: 10px;
-        width: 250px;
+        width: 200px;
     }
     button {
         padding: 12px 20px;
@@ -62,19 +69,11 @@
     }
     img {
         max-width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         border-radius: 4px;
-    }
-    /* Layout for side-by-side small cards */
-    .row {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-    .half-width {
-        width: 48%;
-        min-width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     @media (max-width: 900px) {
         .stats-box {
@@ -85,12 +84,12 @@
 </head>
 <body>
 
-<h1>🚀 Compare Your GitHub Stats with Antony Alex</h1>
-<p>Enter your GitHub username below to see a side-by-side comparison!</p>
-<p style="font-size: 0.9em; color: #8b949e;">(Note: LeetCode stats will only load if your GitHub and LeetCode usernames are the same)</p>
+<h1>🚀 Compare Stats with Antony Alex</h1>
+<p class="subtext">Enter your usernames below to see a side-by-side comparison!</p>
 
 <form id="compareForm">
-    <input type="text" id="visitorUsername" placeholder="Enter GitHub Username" required>
+    <input type="text" id="visitorGithub" placeholder="GitHub Username" required>
+    <input type="text" id="visitorLeetcode" placeholder="LeetCode Username" required>
     <button type="submit">Compare Now</button>
 </form>
 
@@ -98,57 +97,46 @@
     <div class="stats-box">
         <h2>👑 Antony Alex</h2>
         
-        <p align="center">
-             <img src="https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true&custom_title=Antony's%20GitHub%20Activity" />
-        </p>
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=alex22022005&theme=react-dark&hide_border=true&area=true&custom_title=Antony's%20Activity" />
 
-        <img src="https://github-profile-trophy.vercel.app/?username=alex22022005&theme=radical&no-frame=true&margin-w=10&margin-h=10" alt="Trophies">
+        <img src="https://streak-stats.demolab.com?user=alex22022005&theme=radical&hide_border=true" style="width: 90%;" alt="Streaks">
 
-        <div class="row">
-            <img class="half-width" src="https://github-readme-stats.vercel.app/api?username=alex22022005&show_icons=true&theme=radical&hide_border=true&cache_seconds=1800" alt="Stats">
-            <img class="half-width" src="https://streak-stats.demolab.com?user=alex22022005&theme=radical&hide_border=true" alt="Streaks">
-        </div>
-
-        <div class="row">
-             <img src="https://leetcard.jacoblin.cool/alex22022005?theme=dark&hide_border=true" style="width: 100%; margin-top: 10px;" alt="LeetCode">
-        </div>
+        <img src="https://leetcard.jacoblin.cool/alex22022005?theme=dark&hide_border=true" style="width: 90%;" alt="LeetCode">
     </div>
 </div>
 
 <script>
 document.getElementById("compareForm").addEventListener("submit", function(event) {
     event.preventDefault();
-    let visitor = document.getElementById("visitorUsername").value.trim();
-    if (!visitor) return;
+    
+    // Get values from inputs
+    let ghUser = document.getElementById("visitorGithub").value.trim();
+    let lcUser = document.getElementById("visitorLeetcode").value.trim();
 
-    let myUser = "alex22022005";
+    if (!ghUser || !lcUser) return;
+
+    let myGh = "alex22022005";
+    let myLc = "alex22022005";
+    
     let resultsDiv = document.getElementById("results");
 
-    // Helper function to generate HTML for a user card
-    function generateCard(username, title) {
+    // Function to generate the HTML card
+    function generateCard(ghUsername, lcUsername, title) {
         return `
         <div class="stats-box">
             <h2>${title}</h2>
             
-            <p align="center">
-                <img src="https://github-readme-activity-graph.vercel.app/graph?username=${username}&theme=react-dark&hide_border=true&area=true&custom_title=${username}'s%20Activity" />
-            </p>
+            <img src="https://github-readme-activity-graph.vercel.app/graph?username=${ghUsername}&theme=react-dark&hide_border=true&area=true&custom_title=${ghUsername}'s%20Activity" />
 
-            <img src="https://github-profile-trophy.vercel.app/?username=${username}&theme=radical&no-frame=true&margin-w=10&margin-h=10" alt="Trophies">
+            <img src="https://streak-stats.demolab.com?user=${ghUsername}&theme=radical&hide_border=true" style="width: 90%;" alt="Streaks">
 
-            <div class="row">
-                <img class="half-width" src="https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=radical&hide_border=true&cache_seconds=1800" alt="Stats">
-                <img class="half-width" src="https://streak-stats.demolab.com?user=${username}&theme=radical&hide_border=true" alt="Streaks">
-            </div>
-
-            <div class="row">
-                 <img src="https://leetcard.jacoblin.cool/${username}?theme=dark&hide_border=true" style="width: 100%; margin-top: 10px;" alt="LeetCode Stats">
-            </div>
+            <img src="https://leetcard.jacoblin.cool/${lcUsername}?theme=dark&hide_border=true" style="width: 90%;" alt="LeetCode Stats">
         </div>
         `;
     }
 
-    resultsDiv.innerHTML = generateCard(myUser, "👑 Antony Alex") + generateCard(visitor, `🧑‍💻 ${visitor}`);
+    // Render both cards
+    resultsDiv.innerHTML = generateCard(myGh, myLc, "👑 Antony Alex") + generateCard(ghUser, lcUser, `🧑‍💻 ${ghUser}`);
 });
 </script>
 
